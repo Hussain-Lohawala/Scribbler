@@ -1,2 +1,1 @@
-# Scribbler
-Simple blogging website.
+
