@@ -1,0 +1,136 @@
+body {
+    background-color: orange;
+}
+
+/*Post*/
+.postContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    background-color: gainsboro;
+    /* border: 2px solid rgba(180, 180, 180, 0.7); */
+    width: 35%;
+    height: 180px;
+    margin: 30px 80px;
+    border-radius: 20px;
+}
+
+.nameContainer {
+    background-color: white;
+    align-self: center;
+    height: 180px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.authorName{
+    text-align: center;
+    padding: 40px 10px 0px;
+    width: 80px;
+    font-family: 'Bree Serif', serif;
+}
+
+.postTextContainer {
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+} 
+
+.postHeadBin{
+    display: flex;
+    flex-direction:row; 
+    width: 100%;
+    margin: 0px 0px 0px 10px; 
+}
+.postHeading{
+    font-size: 20px;
+    font-weight: bold; 
+    width: 90%;
+}
+.postCntElps{
+    display: flex; 
+    flex-direction: row;
+    margin:0px 0px 0px 10px; 
+    width: 100%;
+}
+.postContent{
+    font-size: 18px;
+    width: 90%;
+}
+.ellipsesis{ 
+    float:right;
+    color: black;
+    font-size: 18px; 
+    margin: 60px 20px 20px;
+}
+
+/*Trash Bin*/
+.bin{ 
+    margin: 10px;
+    font-size: 18px;
+}
+.bin:hover {
+    cursor: pointer;
+}
+
+/*delete Modal*/
+.deleteModal {
+    background-color: rgba(70, 70, 80, 0.7);
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+}
+
+.deleteModal-content {
+    background-color: #fefefe;
+    margin: 8% auto;
+    /* 5% from the top and centered */
+    padding: 0px 20px;
+    border: 1px solid #888;
+    width: 350px;
+    height: 120px;
+    text-align: center; 
+    font-size: 20px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+#yes{
+    background-color: red;
+    margin: 5px; 
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    width: 50px;
+    border:1px solid white;
+}
+#no{
+    background-color: green;
+    margin: 5px; 
+    color: white;
+    font-size: 15px;
+    padding: 2px;
+    width: 50px;
+    border: 1px solid white;
+}
