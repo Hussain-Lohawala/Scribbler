@@ -1,0 +1,81 @@
+body {
+    background-color: orange;
+}
+
+/*Post*/
+.postContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    border: 2px solid rgba(180, 180, 180, 0.7);
+    width: 30%;
+    height: 150px;
+    margin: 30px 80px;
+    border-radius: 20px;
+}
+
+.authorName {
+    background-color: white;
+    align-self: center;
+    width: 100px;
+    height: 150px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.postText {
+    padding: 15px 15px 20px 10px;
+}
+
+/*Trash Bin*/
+.bin:hover {
+    cursor: pointer;
+}
+
+/*delete Modal*/
+.deleteModal {
+    background-color: rgba(70, 70, 80, 0.7);
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+}
+
+.deleteModal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    /* 5% from the top and centered */
+    padding: 0px 20px;
+    border: 1px solid #888;
+    width: fit-content;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#yes{
+    background-color: red;
+}
+#no{
+    background-color: green;
+}

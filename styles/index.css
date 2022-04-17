@@ -53,3 +53,7 @@ while the background image is loading */
   font-weight: bold;
   border: 2px ridge white;
 }
+#createPost:hover,
+#allPosts:hover{
+  cursor: pointer;
+}
