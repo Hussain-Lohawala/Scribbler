@@ -70,22 +70,22 @@
   text-align: center;
 }
 
-.modal-content div {
+.modal-content form {
   display: flex;
   flex-direction: column; 
 }
-.modal-content div label {
+.modal-content form label {
   font-family: "Roboto Condensed", sans-serif;
   width: 300px;
   font-size: 20px;
-  margin: 5px 12px;
+  margin: 10px 15px;
 }
-.modal-content div input {
+.inputField {
   background-color: #efefef;
   font-family: "Roboto Condensed", sans-serif;
   width: 300px;
   font-size: 20px;
-  margin: 10px 20px;
+  margin: 10px 15px;
   padding: 10px;
   border: none;
 }
@@ -94,7 +94,7 @@
   background-color: green;
   color: white;
   height: 40px;
-  margin: 10px 10px 20px;
+  margin: 10px 15px 20px;
   font-weight: bold;
   border: none;
 }
