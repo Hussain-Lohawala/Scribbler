@@ -1,13 +1,159 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!-- TODO: Include Font Awesome file here -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <!-- TODO: Include Google Fonts file here -->
-</head>
 
-<body>
+    <!--Satisfy-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Marck Script-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Roboto Condensed-->
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+
+  <body>
     <!-- TODO: Include all your code for the header and home page here -->
-</body>
 
+    <!--header-->
+    <div class="header">
+      <span>
+        <!-- Trigger/Open The Sign In Modal -->
+        <button id="signIn" onclick="modalOpen('signInM')">Sign In</button>
+
+        <!-- Trigger/Open The Sign Up Modal -->
+        <button id="signUp" onclick="modalOpen('signUpM')">Sign Up</button>
+      </span>
+
+      <p id="logo">ScriBBler</p>
+      <p id="tagline">Explore, Imagine, Create</p>
+
+      <!-- The Sign In Modal -->
+      <div id="signInM" class="modal">
+        <!--Sign In Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p class="Title">Welcome Back!</p>
+          <hr />
+          <div>
+            <label for="uname">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="uname"
+              placeholder="Enter Username"
+            />
+            <label for="pd">Password</label>
+            <input
+              type="password"
+              name="pd"
+              id="pd"
+              placeholder="Enter Password"
+            />
+            <button class="submitButton">Sign In</button>
+            <p id="signUpLink">
+              Not a member? <a onclick="signUpLink()">Sign Up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Sign Up Modal -->
+      <div id="signUpM" class="modal">
+        <!--Sign Up Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p class="Title">Get Started</p>
+          <hr />
+          <div>
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              name="fullName"
+              id="fullName"
+              placeholder="Enter Full Name"
+            />
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter Username"
+            />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password"
+            />
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+              placeholder="Confirm Password"
+            />
+            <button class="submitButton">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="postButtons">
+      <button
+        id="allPosts"
+        onclick="window.location.assign('/html/bloglist.html')"
+      >
+        All Posts
+      </button>
+
+      <!-- Trigger/Open The Create Post Modal -->
+      <button id="createPost" onclick="openModal('createPostM')">
+        Create Post
+      </button>
+
+      <!-- The Create Post Modal -->
+      <div id="createPostM" class="modal">
+        <!--Create Post Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p class="Title">Pen Your Post</p>
+          <div>
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" />
+            <label for="content">Content:</label>
+            <textarea
+              name="content"
+              id="content"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button>Create</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/header.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
 </html>
