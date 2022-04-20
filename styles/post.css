@@ -1,0 +1,86 @@
+#heading{
+    font-size: 30px;
+    font-weight: bold; 
+    font-family: 'Roboto Condensed', sans-serif;
+    border: none; 
+    margin: 40px 0px;
+    text-align: center;
+    width: 100%;
+}
+.author{
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Niconne', cursive;
+    margin-left: 65px;
+} 
+.editSave{
+    float: right;
+    background-color: red;
+    border: none;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 2px;
+    margin-right: 65px;
+}
+.editSave:hover{
+    cursor: pointer;
+}
+#content{
+    font-size: 20px;
+    padding:10px;
+    margin: 30px 65px;
+    border: none;
+}
+.likeBtn{
+    float: left;
+    background-color: red;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 65px;
+}
+
+.likeBtn:hover{
+    cursor: pointer;
+}
+
+#likeText{
+    margin: 20px 65px; 
+    font-size: 14px;
+    font-weight: 600;
+    font-family:'Courier New', Courier, monospace;
+}
+#comment{
+    margin: 10px 65px;
+    width: 40%; 
+}
+.commentBtn{
+    background-color: red;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 8px 65px;
+}
+#allCmnts{
+    margin: 40px 65px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.allComments{
+    background-color: gainsboro;
+    margin: 10px 75px;
+    padding: 20px;
+}
+.allComments p{
+    font-size: 18px;
+    background-color: white;
+    margin: 10px 5px 5px 5px;
+    padding: 20px;
+}

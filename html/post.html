@@ -1,137 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScriBBler</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScriBBler</title>
 
-    <!-- TODO: Include Font Awesome file here -->
-    <script
-      src="https://kit.fontawesome.com/11e4b984a5.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- TODO: Include Font Awesome file here -->
+  <script src="https://kit.fontawesome.com/11e4b984a5.js" crossorigin="anonymous"></script>
 
-    <!-- TODO: Include Google Fonts file here -->
+  <!-- TODO: Include Google Fonts file here -->
 
-    <!--Satisfy-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
+  <!--Satisfy-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
 
-    <!--Marck Script-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
-      rel="stylesheet"
-    />
+  <!--Marck Script-->
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet" />
 
-    <!--Roboto Condensed-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
-    <!--Stylesheets-->
-    <link rel="stylesheet" href="/styles/header.css" />
-    <link rel="stylesheet" href="/styles/post.css" />
+  <!--Roboto Condensed-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+
+  <!--Niconne-->
+  <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet" />
+
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="/styles/header.css" />
+  <link rel="stylesheet" href="/styles/post.css" />
 </head>
+
 <body>
-    <div class="header">
-        <span>
-          <!-- Trigger/Open The Sign In Modal -->
-          <button id="signIn" onclick="modalOpen('signInM')">Sign In</button>
-  
-          <!-- Trigger/Open The Sign Up Modal -->
-          <button id="signUp" onclick="modalOpen('signUpM')">Sign Up</button>
-        </span>
-  
-        <p id="logo">ScriBBler</p>
-        <p id="tagline">Explore, Imagine, Create</p>
-  
-        <!-- The Sign In Modal -->
-        <div id="signInM" class="modal">
-          <!--Sign In Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p class="Title">Welcome Back!</p>
-            <hr />
-            <form>
-              <label for="uname">Username</label>
-              <input
-                type="text"
-                name="username"
-                id="uname"
-                class="inputField"
-                placeholder="Enter Username"
-                required
-              />
-              <label for="pd">Password</label>
-              <input
-                type="password"
-                name="pd"
-                id="pd"
-                class="inputField"
-                placeholder="Enter Password"
-                required
-              />
-              <input class="submitButton" type="submit" value="Sign In" />
-              <p id="signUpLink">
-                Not a member? <a onclick="signUpLink()">Sign Up</a>
-              </p>
-            </form>
-          </div>
-        </div>
-  
-        <!-- The Sign Up Modal -->
-        <div id="signUpM" class="modal">
-          <!--Sign Up Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p class="Title">Get Started</p>
-            <hr />
-            <form>
-              <label for="fullName">Full Name</label>
-              <input
-                type="text"
-                name="fullName"
-                id="fullName"
-                class="inputField"
-                placeholder="Enter Full Name"
-                required
-              />
-              <label for="username">Username</label>
-              <input
-                type="text"
-                name="username"
-                id="username"
-                class="inputField"
-                placeholder="Enter Username"
-                required
-              />
-              <label for="password">Password</label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                class="inputField"
-                placeholder="Enter Password"
-                required
-              />
-              <label for="confirmPassword">Confirm Password</label>
-              <input
-                type="password"
-                name="confirmPassword"
-                id="confirmPassword"
-                class="inputField"
-                placeholder="Confirm Password"
-                required
-              />
-              <input class="submitButton" type="submit" value="Sign Up" />
-            </form>
-          </div>
-        </div>
+  <div class="header">
+    <span>
+      <!-- Trigger/Open The Sign In Modal -->
+      <button id="signIn" onclick="modalOpen('signInM')">Sign In</button>
+
+      <!-- Trigger/Open The Sign Up Modal -->
+      <button id="signUp" onclick="modalOpen('signUpM')">Sign Up</button>
+    </span>
+
+    <p id="logo">ScriBBler</p>
+    <p id="tagline">Explore, Imagine, Create</p>
+
+    <!-- The Sign In Modal -->
+    <div id="signInM" class="modal">
+      <!--Sign In Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p class="Title">Welcome Back!</p>
+        <hr />
+        <form>
+          <label for="uname">Username</label>
+          <input type="text" name="username" id="uname" class="inputField" placeholder="Enter Username" required />
+          <label for="pd">Password</label>
+          <input type="password" name="pd" id="pd" class="inputField" placeholder="Enter Password" required />
+          <input class="submitButton" type="submit" value="Sign In" />
+          <p id="signUpLink">
+            Not a member? <a onclick="signUpLink()">Sign Up</a>
+          </p>
+        </form>
       </div>
+    </div>
+
+    <!-- The Sign Up Modal -->
+    <div id="signUpM" class="modal">
+      <!--Sign Up Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p class="Title">Get Started</p>
+        <hr />
+        <form>
+          <label for="fullName">Full Name</label>
+          <input type="text" name="fullName" id="fullName" class="inputField" placeholder="Enter Full Name" required />
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" class="inputField" placeholder="Enter Username" required />
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" class="inputField" placeholder="Enter Password"
+            required />
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" name="confirmPassword" id="confirmPassword" class="inputField"
+            placeholder="Confirm Password" required />
+          <input class="submitButton" type="submit" value="Sign Up" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="pageContent">
+    <div>
+      <p id="heading" class="editable">The legacy of Jimi Hendrix</p>
+      <span class="author">Jimi</span>
+      <button onclick="esBtn()" class="editSave">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+    </div>
+    <div>
+      <p class="editable" id="content">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae debitis maiores possimus dolore exercitationem perferendis placeat id sint omnis aliquam, vitae suscipit eius quae, ex iste, ea dolores facilis obcaecati et! Delectus dolores tenetur molestias facere necessitatibus sunt eius officia a blanditiis quia, omnis dolorum magnam! Voluptatum aperiam aliquid debitis rem, perferendis id facilis temporibus incidunt expedita aut saepe dolorum magni fuga illo omnis sunt numquam? At doloremque, ex suscipit vero repudiandae optio cupiditate, molestias non laboriosam aliquam, itaque sequi. Iste, ut enim! Libero ipsum, iure provident quasi placeat, eligendi amet doloremque autem nihil modi unde sunt dolores illum fugiat est ut aperiam laboriosam cumque. Eum officia non, porro repellendus quod necessitatibus esse quasi, mollitia temporibus blanditiis cum laborum dolores nesciunt reiciendis expedita recusandae aperiam in earum eaque magni autem provident iste consequuntur aliquid! Reprehenderit nihil quae doloribus alias voluptates harum veritatis assumenda officiis amet sequi eligendi tempora iste optio fugit, dolor quia debitis perferendis quaerat hic quisquam adipisci rem eius qui atque. Quis hic ipsa sint excepturi eum cumque voluptatibus commodi obcaecati enim laboriosam quibusdam iusto dolorem quasi voluptates similique consequatur esse possimus placeat, voluptatum ducimus saepe ab. Et, nobis alias inventore dicta omnis qui praesentium! Reiciendis molestiae eveniet voluptate asperiores ullam quis soluta explicabo totam molestias dolores magnam nisi similique inventore suscipit, autem ipsam quo praesentium minima ipsa labore, temporibus id earum. Maxime quisquam laboriosam vel cum fugiat laudantium sint eaque iusto, alias accusantium magnam minus harum sapiente, quos consectetur ad iste ratione rem corrupti! Eveniet aliquam placeat explicabo provident odio iusto id repudiandae vel nulla quo deserunt quos corrupti reprehenderit consectetur, a aliquid at natus. Ipsa magnam, debitis accusantium eligendi facilis dolore earum reiciendis sunt provident impedit minima perspiciatis veritatis culpa optio, vel quo assumenda iste nulla voluptate! Temporibus rerum obcaecati perspiciatis placeat iure harum dolor ipsam.
+      </p>
+    </div>
+    <div class="likeButton">
+      <button onclick="like()" class="likeBtn"><i class="fa-solid fa-thumbs-up"></i> Like</button> 
+      <br><br>
+      <p id="likeText">Be the first one to like this!</p>
+    </div>
+    <div class="commentBox">
+      <textarea name="comment" id="comment" cols="30" rows="10" class="comment"
+        placeholder="Leave a comment..."></textarea> 
+        <br>
+      <button onclick="addComment()" class="commentBtn">Comment</button>
+    </div>
+    <p id="allCmnts">All Comments</p>
+    <div class="allComments">
+      <p>Second comment</p>
+      <p>First comment</p>
+    </div>
+  </div>
+  <script src="/scripts/header.js"></script>
+  <script src="/scripts/post.js"></script>
 </body>
 </html>
